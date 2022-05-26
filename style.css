@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: rgb(140, 238, 127);    
+}
+*{
+    margin:0;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+    display:flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+nav ul li{
+    padding: 0 12px;
+    cursor: pointer;
+}
+.brand img{
+    width: 54px;
+    padding:0 8px;
+}
+.brand{
+    display:flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    max-height: 70vh;
+    background-color: #000000;
+    color: #fff9f9;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    margin: 23px auto ;
+    width: 70%;
+    border-radius: 15px;
+    padding: 30px;
+    background-size: 100%;
+    background-image:url('123.jpeg');
+    background-repeat: no-repeat;
+
+}
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+    position: relative;
+}
+
+#myProgressBar{
+    width:80%;
+    cursor: pointer;
+}
+.sp{
+    justify-content:space-between;
+    align-items:center;
+    display: flex;
+    width: 80%;
+
+}
+.songItem{
+    height:40px;
+    display: flex;
+    background-color: antiquewhite;
+    width:100%;
+    color: #000000;
+    margin: 12px 0;
+    justify-content:space-evenly;
+    align-items:center;
+    border-radius: 30px;
+}
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 10px;
+    align-self: center;
+
+}
+.timestamp{
+    margin: 23px;
+    cursor: pointer;
+}
+.songItem i{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    color: #fff9f9;
+    vertical-align: auto; 
+      
+}
+
+.songItemContainer{
+    margin-top: 74px;
+}
+.songInfo img{
+    padding-top: 50px;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    border-radius: 5px;
+
+}
+.songInfo span{
+    right: 5%;
+    overflow-wrap: break-word;
+    
+}
+.card{
+    display:flex;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    top:0;
+    right: 25%;
+    border: 3px solid rgb(196, 211, 190);
+    width:50%;
+    z-index: 9;
+    border-radius: 15px;
+    
+  }
+  .form-container {
+    
+    padding: 10px;
+    background-color: #151a12;
+    color: rgb(156, 218, 94);
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  /* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: rgb(223, 71, 71);
+    
+  }
+  .form-container i{
+      font-size: 25px;
+      cursor: pointer;
+
+  }
+  .form-container h2{
+      color: antiquewhite;
+  }
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: rgb(15, 87, 170);
+    }
+    
+
+
+  
+
+}
